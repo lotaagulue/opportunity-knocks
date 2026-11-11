@@ -1,0 +1,14 @@
+name: Idea or feature request
+description: Suggest something that would help you manage your team.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like it to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: How would it help your season?

@@ -1,0 +1,39 @@
+name: Bug report
+description: Something in the extension isn't working or shows wrong numbers.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues are public. **Never post ESPN cookies or login details**, and please hide other managers' team names in screenshots.
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      description: Shown in chrome://extensions under Opportunity Knocks.
+      placeholder: "0.13.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: tab
+    attributes:
+      label: Where did it happen?
+      options: [Today, Waivers, Matchup, Lineup, Trade, Moves, Standings, Players, Settings, Somewhere else]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open the side panel\n2. ..."
+  - type: input
+    id: chrome
+    attributes:
+      label: Chrome version
+      description: chrome://version

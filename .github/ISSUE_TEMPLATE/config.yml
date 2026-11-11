@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Privacy policy
+    url: https://opportunity-knocks-data.vercel.app/privacy
+    about: What the extension reads and sends, and what it never does.
